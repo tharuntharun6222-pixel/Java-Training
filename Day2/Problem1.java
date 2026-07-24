@@ -1,6 +1,6 @@
 package Day2;
 
-public class problem1 {
+public class Problem1 {
     public int addDigits(int num) {
         while (num >= 10) {
             int sum = 0;

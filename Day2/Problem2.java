@@ -1,6 +1,6 @@
 package Day2;
 
-public class problem2 {
+public class Problem2 {
      public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {
 
         if (k <= numOnes) {
