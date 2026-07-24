@@ -1,16 +1,17 @@
 package Day3;
 
-public class problem3 {
-   public int sumOfMultiples(int n) {
+public class Problem2 {
+     public int numWaterBottles(int numBottles, int numExchange) {
 
-        int sum = 0;
+        int total = numBottles;
+        int empty = numBottles;
 
-        for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-                sum += i;
-            }
+        while (empty >= numExchange) {
+            int newBottles = empty / numExchange;
+            total += newBottles;
+            empty = newBottles + (empty % numExchange);
         }
 
-        return sum;
+        return total;
     }
-} 
+}
